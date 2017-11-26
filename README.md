@@ -5,7 +5,9 @@ A recursive neural net for paraphrase detection. There's also a Cky beam search 
 REFERENCE PAPER: https://nlp.stanford.edu/pubs/SocherLinNgManning_ICML2011.pdf
 
 PREREQS: - import glove word vectors of 100 dimentions (file:glove.6B.100d.txt) from https://nlp.stanford.edu/projects/glove/
-         - get parsed trees from stanford parser (*** they should be in binarized format ***)
+         - get parsed trees from stanford parser *** they should be in binarized format ***
+         - Import tensorflow and numpy
+         
 
 DESCRIPTION: This code parses sentences already Annotated with stanford parser using binarization, and creates
 a tree object for each sentence with Glove words embeddings for each leaf node (which is a word). Then it trains 
