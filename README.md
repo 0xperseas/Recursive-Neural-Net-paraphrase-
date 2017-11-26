@@ -15,5 +15,5 @@ structure prediction on each node. Finally after each node's embeddings of the s
 construct a distance algorithm to compute the distances between sentences and get the ones that are close enough 
 as paraphrases! 
 
-EXTENSION: There's also a bottom up beam search algorithm on the bottom of the page for fun. (Note: this would 
+EXTENSION: There's also a bottom up beam search Parser algorithm on the bottom of the page for fun. (Note: this would 
 require a binarized format grammar.)
