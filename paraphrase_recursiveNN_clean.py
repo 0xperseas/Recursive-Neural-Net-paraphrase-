@@ -4,13 +4,11 @@ import queue
 import numpy as np
 import pickle
 import random
-from sklearn.preprocessing import OneHotEncoder
 from queue import Queue, PriorityQueue
 import os
 import os.path
 from collections import OrderedDict
 from parse_glove import get_glove
-from nltk.tokenize import sent_tokenize
 import copy
 
 #########################################################
