@@ -1,8 +1,21 @@
 import numpy as np
 import pickle
 import random
+from urllib.request import urlretrieve
+import zipfile
 
-glove_dir = "./glove.6B.100d.txt"
+
+resp = urlretrieve("http://nlp.stanford.edu/data/glove.6B.zip")
+file = resp.read()
+
+with open("glove_data.zip", 'w+') as f:
+    f.write(file)
+
+zip_ref = zipfile.ZipFile("glove.6B.zip", 'r')
+zip_ref.extractall("./")
+zip_ref.close()
+
+glove_dir = "glove.6B.100d.txt"
 
 def save_obj(obj, name ):
     with open('obj/'+ name + '.pkl', 'wb+') as f:
